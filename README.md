@@ -22,3 +22,5 @@ docker build -t YOUR_PERSONALIZED_NAME/yealink:1.1 -t YOUR_PERSONALIZED_NAME/yea
 ```
 docker run -v ./db/:/yealink/db/ --name yealink-rpb --network YOUR_REVERSE_PROXY_NETWORK -p 8081:80 jonswc/yealink:latest 
 ```
+
+After running container, copy `yealink-rpb/db/schema.rb` to local folder's db (ex: `$PWD: ~/phonebook/db` would be `cp yealink-rpb/db/schema.rb ~/phonebook/db`)
