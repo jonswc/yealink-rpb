@@ -9,10 +9,10 @@ You can run this app with a simple Docker container (with a SQLite3 DB and Puma 
 
 #### Building the Image Yourself
 
-Build the image by using
+Build the image by using (tagging incrementally, along with `latest`)
 
 ```
-docker build -t jonswc/yealink:1.1 -t jonswc/yealink:latest .
+docker build -t YOUR_PERSONALIZED_NAME/yealink:1.1 -t YOUR_PERSONALIZED_NAME/yealink:latest .
 ```
 
 
